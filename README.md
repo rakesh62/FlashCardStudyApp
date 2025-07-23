@@ -8,16 +8,7 @@ A simple iOS app to help users study with flashcards. Features include adding/ed
 ## 🚀 Run Instructions
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/FlashcardStudyApp.git
-   cd FlashcardStudyApp
-   ```
-
 2. Open the project in Xcode:
-   ```bash
-   open FlashCardApp.xcodeproj
-   ```
-
 3. Build & run the project on a simulator or a real device using:
    - Xcode 14.0+ (or compatible)
    - iOS 13.0+ target
@@ -52,29 +43,11 @@ This clean separation improves testability and reusability.
 - Study mode with navigation, shuffle, and answer tracking.
 - Responsive UI with proper reuse handling (`prepareForReuse` implemented).
 
----
-
-## 📸 Screenshots (Optional)
-
-<sub>*Add images to your repo and update these links accordingly*</sub>
-
-| Home Screen             | Add Flashcard            | Study Mode               |
-|------------------------|--------------------------|--------------------------|
-| ![Home](screens/home.png) | ![Add](screens/add.png) | ![Study](screens/study.png) |
-
----
-
 ## 👨‍💻 Author
 
 Rakesh Jadhav  
-GitHub: [@your-username](https://github.com/your-username)  
-Email: you@example.com
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
+GitHub: [@rakesh62](https://github.com/rakesh62)  
+Email: jadhavrakesh6@example.com
 
 ---
 
@@ -84,4 +57,3 @@ This project is licensed under the MIT License.
 - [x] README with:
   - [x] Run Instructions  
   - [x] Architecture explanation  
-  - [x] Optional screenshots  
