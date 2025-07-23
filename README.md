@@ -7,8 +7,8 @@ A simple iOS app to help users study with flashcards. Features include adding/ed
 
 ## 🚀 Run Instructions
 
-1. Clone the repository:
-2. Open the project in Xcode:
+1. Clone the repository
+2. Open the project in Xcode
 3. Build & run the project on a simulator or a real device using:
    - Xcode 14.0+ (or compatible)
    - iOS 13.0+ target
