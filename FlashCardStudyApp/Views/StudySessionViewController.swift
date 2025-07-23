@@ -21,7 +21,7 @@ class StudySessionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Study"
+        title = Constants.NavigationTitle.study
         setupTapGesture()
         updateUIWithCurrentCard()
     }
@@ -35,7 +35,7 @@ class StudySessionViewController: UIViewController {
         guard !isAnswerRevealed else { return }
         
         UIView.transition(with: cardContainer,
-                          duration: 0.4,
+                          duration:Constants.Animation.flipDuration,
                           options: .transitionFlipFromRight,
                           animations: {
             self.answerLabel.isHidden = false
@@ -53,8 +53,8 @@ class StudySessionViewController: UIViewController {
             return
         }
         
-        questionLabel.text = "Question: \(card.question)"
-        answerLabel.text = "Answer: \(card.answer)"
+        questionLabel.text = "\(Constants.Flashcard.question) \(card.question)"
+        answerLabel.text = "\(Constants.Flashcard.answer) \(card.answer)"
         answerLabel.isHidden = true
         isAnswerRevealed = false
         
@@ -76,11 +76,11 @@ class StudySessionViewController: UIViewController {
     
     private func showCompletionAlert() {
         let alert = UIAlertController(
-            title: "Session Completed",
-            message: "Correct: \(viewModel.correctCount)\nWrong: \(viewModel.wrongCount)",
+            title: Constants.Flashcard.sessionCompleted,
+            message: "\(Constants.Flashcard.correct) \(viewModel.correctCount)\n\(Constants.Flashcard.question) \(viewModel.wrongCount)",
             preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in
+        alert.addAction(UIAlertAction(title: Constants.Alert.ok, style: .default) { _ in
             self.navigationController?.popViewController(animated: true)
         })
         present(alert, animated: true)

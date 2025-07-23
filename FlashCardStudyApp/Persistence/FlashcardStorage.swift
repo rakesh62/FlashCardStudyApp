@@ -11,7 +11,7 @@ import Foundation
 class FlashcardStorage {
     static let shared = FlashcardStorage()
     
-    private let key = "flashcards"
+    private let key = Constants.Flashcard.key
     
     func save(_ flashcards: [Flashcard]) {
         if let data = try? JSONEncoder().encode(flashcards) {

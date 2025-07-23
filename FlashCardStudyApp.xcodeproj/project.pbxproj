@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8599406E2E311BF2002AD1DB /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599406D2E311BF2002AD1DB /* Flashcard.swift */; };
 		859940742E312580002AD1DB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859940732E312580002AD1DB /* UIViewController+Extension.swift */; };
+		859940772E31331F002AD1DB /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859940762E31331F002AD1DB /* Constants.swift */; };
 		85AF8A392E2E241C0043F93D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A382E2E241C0043F93D /* AppDelegate.swift */; };
 		85AF8A3B2E2E241C0043F93D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */; };
 		85AF8A402E2E241C0043F93D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85AF8A3F2E2E241C0043F93D /* Base */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		8599406D2E311BF2002AD1DB /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
 		859940732E312580002AD1DB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		859940762E31331F002AD1DB /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		85AF8A352E2E241C0043F93D /* FlashCardStudyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardStudyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AF8A382E2E241C0043F93D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,14 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		859940752E313315002AD1DB /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				859940762E31331F002AD1DB /* Constants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		85AF8A2C2E2E241C0043F93D = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +141,7 @@
 		85AF8A372E2E241C0043F93D /* FlashCardStudyApp */ = {
 			isa = PBXGroup;
 			children = (
+				859940752E313315002AD1DB /* Constant */,
 				859940722E312568002AD1DB /* Extension */,
 				85AF8A382E2E241C0043F93D /* AppDelegate.swift */,
 				85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */,
@@ -227,6 +238,7 @@
 				85AF8A392E2E241C0043F93D /* AppDelegate.swift in Sources */,
 				85AF8A512E2E24D30043F93D /* FlashcardCell.swift in Sources */,
 				85AF8A3B2E2E241C0043F93D /* SceneDelegate.swift in Sources */,
+				859940772E31331F002AD1DB /* Constants.swift in Sources */,
 				859940742E312580002AD1DB /* UIViewController+Extension.swift in Sources */,
 				85AF8A572E2E25800043F93D /* StudySessionViewModel.swift in Sources */,
 			);

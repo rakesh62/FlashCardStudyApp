@@ -30,14 +30,14 @@ class FlashcardCell: UITableViewCell {
         isFlipped = false
     }
     func configure(with flashcard: Flashcard) {
-        questionLabel.text = "Question: \(flashcard.question)"
-        answerLabel.text = "Answer: \(flashcard.answer)"
+        questionLabel.text = "\(Constants.Flashcard.question) \(flashcard.question)"
+        answerLabel.text = "\(Constants.Flashcard.answer) \(flashcard.answer)"
     }
     
     @objc private func flip() {
         let fromView = isFlipped ? backView! : frontView!
         let toView = isFlipped ? frontView! : backView!
-        UIView.transition(from: fromView, to: toView, duration: 0.5, options: [.transitionFlipFromRight, .showHideTransitionViews]) { _ in
+        UIView.transition(from: fromView, to: toView, duration: Constants.Animation.flipDuration, options: [.transitionFlipFromRight, .showHideTransitionViews]) { _ in
             self.isFlipped.toggle()
         }
     }

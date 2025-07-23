@@ -26,15 +26,15 @@ class FlashcardListViewController: UIViewController {
     }
     
     private func setupTableView() {
-        let nib = UINib(nibName: "FlashcardCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "FlashcardCell")
+        let nib = UINib(nibName: Constants.ReuseIdentifier.flashcardCell, bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: Constants.ReuseIdentifier.flashcardCell)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.tableFooterView = UIView()
     }
     
     private func setupNavigationBar() {
-        title = "Flashcards"
+        title = Constants.NavigationTitle.flashcards
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add,
                                                             target: self,
                                                             action: #selector(addTapped))
@@ -44,7 +44,7 @@ class FlashcardListViewController: UIViewController {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: 80))
         
         let button = UIButton(type: .system)
-        button.setTitle("Start Study Session", for: .normal)
+        button.setTitle(Constants.ButtonTitle.studySession, for: .normal)
         button.titleLabel?.font = .boldSystemFont(ofSize: 16)
         button.backgroundColor = .systemBlue
         button.setTitleColor(.white, for: .normal)
@@ -68,14 +68,14 @@ class FlashcardListViewController: UIViewController {
     func showEditAlert(for index: Int) {
         let flashcard = viewModel.flashcards[index]
         showTextInputAlert(
-            title: "Edit Flashcard",
-            placeholders: ["Enter question", "Enter answer"],
+            title: Constants.Alert.editTitle,
+            placeholders: [Constants.Flashcard.questionPlaceholder, Constants.Flashcard.answerPlaceholder],
             prefilled: [flashcard.question, flashcard.answer],
-            confirmTitle: "Save"
+            confirmTitle: Constants.Alert.save
         ) { [weak self] inputs in
             guard let self = self else { return }
             guard inputs.count == 2, !inputs[0].isEmpty, !inputs[1].isEmpty else {
-                self.showSimpleAlert(title: "Error", message: "Both fields must be filled.")
+                self.showSimpleAlert(title: Constants.Alert.errorTitle, message: Constants.Alert.errorEmptyFields)
                 return
             }
             
@@ -87,12 +87,12 @@ class FlashcardListViewController: UIViewController {
     
     @objc private func addTapped() {
         showTextInputAlert(
-            title: "Add Flashcard",
-            placeholders: ["Enter question", "Enter answer"]
+            title: Constants.Alert.addTitle,
+            placeholders: [Constants.Flashcard.questionPlaceholder, Constants.Flashcard.answerPlaceholder]
         ) { [weak self] inputs in
             guard let self = self else { return }
             guard inputs.count == 2, !inputs[0].isEmpty, !inputs[1].isEmpty else {
-                self.showSimpleAlert(title: "Error", message: "Both question and answer are required.")
+                self.showSimpleAlert(title: Constants.Alert.errorTitle, message: Constants.Alert.errorEmptyFields)
                 return
             }
             
@@ -105,13 +105,13 @@ class FlashcardListViewController: UIViewController {
     @objc private func startStudySession() {
         guard !viewModel.flashcards.isEmpty else {
             showSimpleAlert(
-                title: "No Flashcards",
-                message: "Please add at least one flashcard before starting the session."
+                title: Constants.Alert.noFlashCard,
+                message: Constants.Alert.errorNoFlashcards
             )
             return
         }
         
-        let sessionVC = storyboard?.instantiateViewController(withIdentifier: "StudySessionViewController") as! StudySessionViewController
+        let sessionVC = storyboard?.instantiateViewController(withIdentifier: Constants.ViewController.studySessionVC) as! StudySessionViewController
         sessionVC.viewModel = StudySessionViewModel(flashcards: viewModel.flashcards)
         navigationController?.pushViewController(sessionVC, animated: true)
     }
@@ -125,7 +125,7 @@ extension FlashcardListViewController: UITableViewDataSource, UITableViewDelegat
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FlashcardCell", for: indexPath) as? FlashcardCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Constants.ReuseIdentifier.flashcardCell, for: indexPath) as? FlashcardCell else {
             return UITableViewCell()
         }
         
@@ -141,12 +141,12 @@ extension FlashcardListViewController: UITableViewDataSource, UITableViewDelegat
                    trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath)
     -> UISwipeActionsConfiguration? {
         
-        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
+        let deleteAction = UIContextualAction(style: .destructive, title: Constants.ButtonTitle.delete) { _, _, _ in
             self.viewModel.delete(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
         
-        let editAction = UIContextualAction(style: .normal, title: "Edit") { _, _, _ in
+        let editAction = UIContextualAction(style: .normal, title: Constants.ButtonTitle.edit) { _, _, _ in
             self.showEditAlert(for: indexPath.row)
         }
         
