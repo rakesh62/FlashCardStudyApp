@@ -47,7 +47,7 @@ This clean separation improves testability and reusability.
 
 Rakesh Jadhav  
 GitHub: [@rakesh62](https://github.com/rakesh62)  
-Email: jadhavrakesh6@example.com
+Email: jadhavrakesh6@gmail.com
 
 ---
 
