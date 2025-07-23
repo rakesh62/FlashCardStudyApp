@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8599406E2E311BF2002AD1DB /* Flashcard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8599406D2E311BF2002AD1DB /* Flashcard.swift */; };
+		859940742E312580002AD1DB /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859940732E312580002AD1DB /* UIViewController+Extension.swift */; };
 		85AF8A392E2E241C0043F93D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A382E2E241C0043F93D /* AppDelegate.swift */; };
 		85AF8A3B2E2E241C0043F93D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */; };
-		85AF8A3D2E2E241C0043F93D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A3C2E2E241C0043F93D /* ViewController.swift */; };
 		85AF8A402E2E241C0043F93D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85AF8A3F2E2E241C0043F93D /* Base */; };
 		85AF8A422E2E241E0043F93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85AF8A412E2E241E0043F93D /* Assets.xcassets */; };
 		85AF8A452E2E241E0043F93D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 85AF8A442E2E241E0043F93D /* Base */; };
+		85AF8A4D2E2E24830043F93D /* FlashcardListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A4C2E2E24830043F93D /* FlashcardListViewController.swift */; };
+		85AF8A502E2E24D30043F93D /* FlashcardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 85AF8A4F2E2E24D30043F93D /* FlashcardCell.xib */; };
+		85AF8A512E2E24D30043F93D /* FlashcardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A4E2E2E24D30043F93D /* FlashcardCell.swift */; };
+		85AF8A532E2E254A0043F93D /* FlashcardStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A522E2E254A0043F93D /* FlashcardStorage.swift */; };
+		85AF8A552E2E25660043F93D /* FlashcardListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A542E2E25660043F93D /* FlashcardListViewModel.swift */; };
+		85AF8A572E2E25800043F93D /* StudySessionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A562E2E25800043F93D /* StudySessionViewModel.swift */; };
+		85AF8A592E2E261F0043F93D /* StudySessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85AF8A582E2E261F0043F93D /* StudySessionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8599406D2E311BF2002AD1DB /* Flashcard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flashcard.swift; sourceTree = "<group>"; };
+		859940732E312580002AD1DB /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		85AF8A352E2E241C0043F93D /* FlashCardStudyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashCardStudyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85AF8A382E2E241C0043F93D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		85AF8A3C2E2E241C0043F93D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85AF8A3F2E2E241C0043F93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85AF8A412E2E241E0043F93D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85AF8A442E2E241E0043F93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85AF8A462E2E241E0043F93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85AF8A4C2E2E24830043F93D /* FlashcardListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewController.swift; sourceTree = "<group>"; };
+		85AF8A4E2E2E24D30043F93D /* FlashcardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardCell.swift; sourceTree = "<group>"; };
+		85AF8A4F2E2E24D30043F93D /* FlashcardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashcardCell.xib; sourceTree = "<group>"; };
+		85AF8A522E2E254A0043F93D /* FlashcardStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardStorage.swift; sourceTree = "<group>"; };
+		85AF8A542E2E25660043F93D /* FlashcardListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardListViewModel.swift; sourceTree = "<group>"; };
+		85AF8A562E2E25800043F93D /* StudySessionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySessionViewModel.swift; sourceTree = "<group>"; };
+		85AF8A582E2E261F0043F93D /* StudySessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySessionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8599406A2E311BA2002AD1DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8599406D2E311BF2002AD1DB /* Flashcard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8599406B2E311BB7002AD1DB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				85AF8A562E2E25800043F93D /* StudySessionViewModel.swift */,
+				85AF8A542E2E25660043F93D /* FlashcardListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8599406C2E311BCA002AD1DB /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				85AF8A522E2E254A0043F93D /* FlashcardStorage.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		8599406F2E311C16002AD1DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				85AF8A4C2E2E24830043F93D /* FlashcardListViewController.swift */,
+				85AF8A582E2E261F0043F93D /* StudySessionViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		859940702E311C34002AD1DB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				85AF8A4E2E2E24D30043F93D /* FlashcardCell.swift */,
+				85AF8A4F2E2E24D30043F93D /* FlashcardCell.xib */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		859940712E311C5D002AD1DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				85AF8A3E2E2E241C0043F93D /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		859940722E312568002AD1DB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				859940732E312580002AD1DB /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		85AF8A2C2E2E241C0043F93D = {
 			isa = PBXGroup;
 			children = (
@@ -56,12 +131,17 @@
 		85AF8A372E2E241C0043F93D /* FlashCardStudyApp */ = {
 			isa = PBXGroup;
 			children = (
+				859940722E312568002AD1DB /* Extension */,
 				85AF8A382E2E241C0043F93D /* AppDelegate.swift */,
 				85AF8A3A2E2E241C0043F93D /* SceneDelegate.swift */,
-				85AF8A3C2E2E241C0043F93D /* ViewController.swift */,
-				85AF8A3E2E2E241C0043F93D /* Main.storyboard */,
-				85AF8A412E2E241E0043F93D /* Assets.xcassets */,
+				859940712E311C5D002AD1DB /* Resources */,
+				859940702E311C34002AD1DB /* Components */,
+				8599406F2E311C16002AD1DB /* Views */,
+				8599406C2E311BCA002AD1DB /* Persistence */,
+				8599406B2E311BB7002AD1DB /* ViewModels */,
+				8599406A2E311BA2002AD1DB /* Models */,
 				85AF8A432E2E241E0043F93D /* LaunchScreen.storyboard */,
+				85AF8A412E2E241E0043F93D /* Assets.xcassets */,
 				85AF8A462E2E241E0043F93D /* Info.plist */,
 			);
 			path = FlashCardStudyApp;
@@ -127,6 +207,7 @@
 			files = (
 				85AF8A422E2E241E0043F93D /* Assets.xcassets in Resources */,
 				85AF8A452E2E241E0043F93D /* Base in Resources */,
+				85AF8A502E2E24D30043F93D /* FlashcardCell.xib in Resources */,
 				85AF8A402E2E241C0043F93D /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +219,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85AF8A3D2E2E241C0043F93D /* ViewController.swift in Sources */,
+				85AF8A532E2E254A0043F93D /* FlashcardStorage.swift in Sources */,
+				8599406E2E311BF2002AD1DB /* Flashcard.swift in Sources */,
+				85AF8A592E2E261F0043F93D /* StudySessionViewController.swift in Sources */,
+				85AF8A552E2E25660043F93D /* FlashcardListViewModel.swift in Sources */,
+				85AF8A4D2E2E24830043F93D /* FlashcardListViewController.swift in Sources */,
 				85AF8A392E2E241C0043F93D /* AppDelegate.swift in Sources */,
+				85AF8A512E2E24D30043F93D /* FlashcardCell.swift in Sources */,
 				85AF8A3B2E2E241C0043F93D /* SceneDelegate.swift in Sources */,
+				859940742E312580002AD1DB /* UIViewController+Extension.swift in Sources */,
+				85AF8A572E2E25800043F93D /* StudySessionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +378,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlashCardStudyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,6 +395,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.sample.FlashCardStudyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -317,8 +407,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FlashCardStudyApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,6 +424,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = test.sample.FlashCardStudyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
